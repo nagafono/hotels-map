@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="dist/style.css">
+    <title>Title</title>
+</head>
+<body>
+<div class="caption hidden">
+    <img src="./assets/hotel-grey.png">
+    <div class="caption-text">
+        <div class="caption-text-name">
+        </div>
+        <div class="caption-text-price">
+        </div>
+        <div class="caption-text-payment-not-supported">
+            Payment is not supported
+        </div>
+        <div class="caption-text-duration">
+        </div>
+    </div>
+</div>
+<button class="filter">
+    <img src="./assets/hotel-white.png">
+    <span class="filter-text">
+        Filter supported hotels
+    </span>
+</button>
+<div class="container">
+    <div class="map"></div>
+</div>
+<button class="book-hotel-button">
+    Book hotel
+</button>
+
+<script src="dist/app.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBLihKcv93tTcTegb29zF_rPLAUS98bG7I&callback=initMap"></script>
+</body>
+</html>

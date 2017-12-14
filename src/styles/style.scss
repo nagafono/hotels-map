@@ -1,0 +1,108 @@
+$supportedPaymentColor: #37BD00;
+$unsupportedPaymentColor: #666666;
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+}
+
+.map {
+  height: 100%;
+}
+
+.caption {
+  position: absolute;
+  padding: 5px 10px;
+  background: #ffffff;
+  border-radius: 10px;
+  border: 2px solid;
+}
+
+.caption img {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.caption .caption-text {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+
+  .caption-text-name {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .caption-text-payment-not-supported {
+    color: $unsupportedPaymentColor;
+  }
+  .caption-text-price {
+    margin: 2px 0;
+    font-size: 16px;
+    color: $supportedPaymentColor;
+  }
+  .caption-text-service-price {
+    font-size: 10px;
+  }
+  .caption-text-duration {
+    font-size: 12px;
+  }
+
+  .caption-text-payment-not-supported {
+    font-size: 14px;
+    padding: 2px;
+    border: 1px #ff0000 solid;
+    color: #ff0000;
+  }
+}
+
+.filter {
+  color: #ffffff;
+  text-align: center;
+  //display: none;
+  width: 280px;
+  padding: 5px 10px;
+  background: $supportedPaymentColor;
+  border: none;
+  margin-top: 10px;
+  position: absolute;
+  left: calc(50% - 140px);
+  z-index: 10;
+
+  img {
+    float: left;
+  }
+  .filter-text {
+    /* looks like google maps doesn't support vertical-align property inside controls,
+       so padding-top is being used for better alignment */
+    vertical-align: middle;
+    padding-top: 5px;
+    font-size: 16px;
+    display: inline-block;
+  }
+}
+
+
+.book-hotel-button {
+  padding: 10px 20px;
+  background: $unsupportedPaymentColor;
+  color: #ffffff;
+  font-size: 18px;
+  margin-bottom: 10px;
+  border: none;
+  bottom: 0;
+  position: absolute;
+  width: 150px;
+  left: calc(50% - 75px);
+  z-index: 10;
+}
+.book-hotel-button.book-hotel-button-active {
+   background: $supportedPaymentColor;
+ }
